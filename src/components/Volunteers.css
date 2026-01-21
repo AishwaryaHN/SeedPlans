@@ -1,0 +1,267 @@
+.volunteers-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Quote Section Styles */
+.quote-container {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+.quote-text {
+  font-size: 24px;
+  line-height: 1.6;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 500;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+}
+
+.quote-reference {
+  font-size: 18px;
+  color: #7f8c8d;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Section Title Styles */
+.section-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.title-line-left,
+.title-line-right {
+  flex: 1;
+  height: 2px;
+  background-color: #e0e0e0;
+  max-width: 300px;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #2c3e50;
+  text-align: center;
+  margin: 0 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0 20px;
+  /* background-color: white; */
+}
+
+/* Volunteers Grid */
+.volunteers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* Volunteer Card */
+.volunteer-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.volunteer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.volunteer-image {
+  height: 250px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.image-placeholder {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.initials {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.volunteer-info {
+  padding: 25px;
+  text-align: center;
+}
+
+.volunteer-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.volunteer-role {
+  font-size: 16px;
+  color: #e74c3c;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Volunteer Button */
+.volunteer-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.volunteer-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 16px 50px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.volunteer-button:hover {
+  background-color: #c0392b;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
+}
+
+.volunteer-button:active {
+  transform: translateY(-1px);
+}
+
+.volunteer-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+.volunteer-button:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(20, 20);
+    opacity: 0;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .volunteers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+  }
+  
+  .quote-text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .volunteers-section {
+    padding: 60px 15px;
+  }
+  
+  .volunteers-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin: 0 15px;
+  }
+  
+  .title-line-left,
+  .title-line-right {
+    max-width: 100px;
+  }
+  
+  .quote-text {
+    font-size: 20px;
+  }
+  
+  .volunteer-image {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .quote-text {
+    font-size: 18px;
+  }
+  
+  .volunteer-name {
+    font-size: 20px;
+  }
+  
+  .volunteer-button {
+    padding: 14px 40px;
+    font-size: 16px;
+  }
+}

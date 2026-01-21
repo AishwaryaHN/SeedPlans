@@ -1,0 +1,331 @@
+/* Causes.css */
+.causes-section {
+  padding: 100px 0;
+  background-color: #f8f9fa;
+  position: relative;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #222222;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+/* .section-title::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #e15210;
+  border-radius: 2px;
+} */
+
+.section-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0;
+  text-align: center;
+}
+
+/* Causes Grid */
+.causes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cause Card */
+.cause-card {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cause-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+.cause-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.cause-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.cause-card:hover .cause-img {
+  transform: scale(1.05);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  pointer-events: none;
+}
+
+/* Content */
+.cause-content {
+  padding: 30px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cause-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #222222;
+  margin: 0 0 15px 0;
+  line-height: 1.3;
+}
+
+.cause-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666666;
+  margin: 0 0 25px 0;
+  flex-grow: 1;
+}
+
+/* Progress Bar */
+.cause-progress {
+  margin-top: auto;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #eaeaea;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* .progress-fill {
+  height: 100%;
+  background: #e15210;
+  border-radius: 3px;
+  transition: width 1s ease;
+} */
+
+/* Progress Stats */
+/* .progress-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+} */
+/* 
+.raised-amount {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #222222;
+} */
+
+/* .goal-amount {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666666;
+} */
+
+/* Progress Labels */
+/* .progress-labels {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.raised-label,
+.goal-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #888888;
+  text-transform: lowercase;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .causes-grid {
+    gap: 25px;
+  }
+  
+  .cause-content {
+    padding: 25px;
+  }
+  
+  .cause-title {
+    font-size: 20px;
+  }
+  
+  .section-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 992px) {
+  .causes-section {
+    padding: 80px 0;
+  }
+  
+  .causes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
+  }
+  
+  .section-header {
+    margin-bottom: 50px;
+  }
+  
+  .section-title {
+    font-size: 34px;
+  }
+  
+  .section-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .causes-section {
+    padding: 60px 0;
+  }
+  
+  .causes-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    gap: 30px;
+  }
+  
+  .section-title {
+    font-size: 30px;
+  }
+  
+  .section-description {
+    font-size: 15px;
+  }
+  
+  .cause-image {
+    height: 220px;
+  }
+  
+  .cause-content {
+    padding: 25px;
+  }
+  
+  .cause-title {
+    font-size: 20px;
+  }
+  
+  .cause-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 26px;
+  }
+  
+  .section-description {
+    font-size: 14px;
+  }
+  
+  .cause-image {
+    height: 200px;
+  }
+  
+  /* .raised-amount {
+    font-size: 16px;
+  }
+  
+  .goal-amount {
+    font-size: 14px;
+  } */
+}
+
+/* ================= TOGGLE BUTTON ================= */
+.toggle-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 50px 0;
+}
+
+.toggle-btn {
+  padding: 12px 34px;
+  border-radius: 30px;
+  border: 2px solid #2e7d32;
+  background: transparent;
+  color: #2e7d32;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #e8f5e9;
+}
+
+.toggle-btn.active {
+  background-color: orange;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(255, 213, 123, 0.989);
+}
+
+/* ================= FADE ANIMATION ================= */
+.fade-in {
+  animation: fadeSlide 0.6s ease;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

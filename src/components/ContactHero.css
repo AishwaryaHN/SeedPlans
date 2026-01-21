@@ -1,0 +1,70 @@
+.contact-hero {
+  position: relative;
+  width: 100%;
+  height: 420px; /* increased height */
+  background-image: url("https://picsum.photos/1920/700?random=15");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Dark overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+/* PERFECT CENTERING */
+.hero-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--white);
+  text-align:center;
+  margin: 0;
+}
+
+/* Breadcrumb Bar */
+.breadcrumb-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--white);
+  z-index: 2;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 0;
+  font-size: 14px;
+  font-family: var(--font-body);
+  color: var(--nav-text);
+}
+
+.breadcrumb-home {
+  color: var(--nav-text);
+  text-decoration: none;
+}
+
+.breadcrumb-home:hover {
+  color: var(--orange-primary);
+}
+
+.breadcrumb-sep {
+  color: #999999;
+}
+
+.breadcrumb .active {
+  color: var(--orange-primary);
+  font-weight: 500;
+}

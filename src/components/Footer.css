@@ -1,0 +1,239 @@
+/* Global container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Footer base */
+.footer {
+    background: linear-gradient(to bottom, #1c1c1c, #111);
+    padding-top: 60px;
+    padding-bottom: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #bdbdbd;
+}
+
+/* Grid */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #333;
+}
+
+/* Columns */
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Logo */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+.logo-icon {
+    font-size: 24px;
+    color: #ff5a00;
+}
+.footer-logo h3 {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+.footer-logo small {
+    color: #bdbdbd;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+}
+
+/* Text */
+.footer-text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    max-width: 280px;
+}
+
+/* Contact list */
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.8;
+}
+.footer-contact li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+.footer-contact li:before {
+    content: "☐";
+    color: #ff5a00;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+}
+
+/* Headings */
+.footer-title {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    position: relative;
+    width: 100%;
+}
+.footer-title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #ff5a00;
+}
+
+/* Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 2.2;
+}
+.footer-links li {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.footer-links li:hover {
+    color: white;
+}
+
+/* Form */
+.footer-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer-form input,
+.footer-form textarea {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #bdbdbd;
+    outline: none;
+    transition: border 0.2s;
+    font-family: inherit;
+}
+.footer-form input::placeholder,
+.footer-form textarea::placeholder {
+    color: #777;
+}
+.footer-form input:focus,
+.footer-form textarea:focus {
+    border-color: #ff5a00;
+}
+.footer-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+.footer-form button {
+    background-color: #ff5a00;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.2s;
+}
+.footer-form button:hover {
+    background-color: #e05100;
+}
+
+/* Bottom bar */
+.footer-bottom {
+    background-color: #0a0a0a;
+    padding: 20px 0;
+}
+.footer-bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-bottom p {
+    font-size: 14px;
+    margin: 0;
+    color: #888;
+}
+
+/* Social icons */
+.footer-socials {
+    display: flex;
+    gap: 12px;
+}
+.footer-socials span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: #222;
+    border-radius: 50%;
+    color: #ff5a00;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.footer-socials span:hover {
+    background-color: #ff5a00;
+    color: white;
+    box-shadow: 0 0 8px rgba(255, 90, 0, 0.5);
+}
+.footer-news .news-item {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-news .news-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.footer-news p {
+  margin-bottom: 0.25rem;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.footer-news small {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+}
+
+.footer-powered {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}

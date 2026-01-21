@@ -1,0 +1,104 @@
+.contact-section {
+  padding: var(--section-padding) 0;
+  background-color: var(--white);
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact-header h2 {
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--nav-text);
+}
+
+.contact-underline {
+  display: block;
+  width: 55px;
+  height: 3px;
+  background-color: var(--orange-primary);
+  margin: 12px auto 22px auto;
+}
+
+.contact-header p {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 15px;
+  color: #666;
+  line-height: 1.7;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--black);
+}
+
+.form-row input {
+  height: 54px;
+}
+
+.form-row textarea {
+  min-height: 180px;
+  resize: none;
+}
+
+.form-row input::placeholder,
+.form-row textarea::placeholder {
+  color: #888;
+}
+
+.form-action {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Button already styled globally, only spacing handled here */
+.form-action .btn {
+  padding: 16px 52px;
+}
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.contact-info-item h4 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-info-item p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

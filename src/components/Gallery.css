@@ -1,0 +1,155 @@
+.gallery-page {
+  padding: 100px 0;
+  background-color: #f7f9f7;
+}
+
+/* Header */
+.gallery-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.gallery-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1b1b1b;
+}
+
+/* ❌ No underline */
+.gallery-header h2::after {
+  display: none;
+}
+
+.gallery-header p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Grid Layout */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Card */
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+  transition: transform 0.4s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Image */
+.gallery-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.1)
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 25px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay h3 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gallery-header h2 {
+    font-size: 28px;
+  }
+
+  .gallery-card img {
+    height: 240px;
+  }
+}
+/* ================= LIGHTBOX ================= */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+}
+
+.lightbox-content img {
+  width: auto;
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-content p {
+  margin-top: 12px;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Close button */
+.lightbox-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.lightbox-close:hover {
+  transform: scale(1.2);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
