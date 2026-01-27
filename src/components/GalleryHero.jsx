@@ -9,6 +9,8 @@ const GalleryHero = () => {
 
       <div className="gallery-hero-content">
         <h1>Gallery</h1>
+        <p className="active">Moments from our environmental activities and green missions</p>
+
       </div>
 
       <div className="gallery-breadcrumb-bar">
@@ -17,7 +19,7 @@ const GalleryHero = () => {
             <Link to="/" className="breadcrumb-home">🏠</Link>
             <span>Home</span>
             <span className="breadcrumb-sep">›</span>
-            <span className="active">Gallery</span>
+            <span className="active"> Our Gallery</span>
           </nav>
         </div>
       </div>

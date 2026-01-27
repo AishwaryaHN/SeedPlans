@@ -41,8 +41,7 @@ const Gallery = () => {
     <section className="gallery-page">
       <div className="container">
         <div className="gallery-header">
-          <h2>Our Gallery</h2>
-          <p>Moments from our environmental activities and green missions</p>
+          
         </div>
 
         <div className="gallery-grid">

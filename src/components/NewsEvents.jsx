@@ -9,7 +9,9 @@ const NewsEvents = () => {
         {/* NEWS */}
         <div className="news-section">
           <h2 className="section-title">News</h2>
-
+            
+            
+          <div className="news-carousel">
           <div className="news-card">
             <div className="news-image">
               <img
@@ -27,6 +29,7 @@ const NewsEvents = () => {
                 volunteers across all our centers in Madurai ...
               </p>
             </div>
+          </div>
           </div>
         </div>
 

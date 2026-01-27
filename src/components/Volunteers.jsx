@@ -1,7 +1,9 @@
 import React from 'react';
 import './Volunteers.css';
+import{ useNavigate } from "react-router-dom";
 
 const Volunteers = () => {
+  const navigate = useNavigate(); 
   const volunteers = [
     { 
       id: 1, 
@@ -68,7 +70,7 @@ const Volunteers = () => {
 
         {/* Volunteer Button */}
         <div className="volunteer-button-container">
-          <button className="volunteer-button">
+          <button className="volunteer-button" onClick={() => navigate("/volunteer-form")}>
             BECOME A VOLUNTEER
           </button>
         </div>

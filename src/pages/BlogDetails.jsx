@@ -1,11 +1,11 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { memo } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import blogData from "./blogData";
 import "./BlogDetails.css";
 
 const BlogDetails = () => {
   const { id } = useParams();
-
+  const navigate = useNavigate();   
   const blog = blogData.find((item) => item.id === Number(id));
 
   if (!blog) {
@@ -22,25 +22,49 @@ const BlogDetails = () => {
           <span>{blog.date}</span>
         </div>
 
-        <img src={blog.img} alt={blog.title} className="blog-banner" />
+        <div className="blog-banner-wrapper">
+          {blog.type === "video" ? (
+            <iframe
+              src={blog.videoUrl}
+              title={blog.title}
+              loading="lazy"
+              allowFullScreen
+            />
+          ) : (
+            <img
+              src={blog.img}
+              alt={blog.title}
+              loading="lazy"
+              className="blog-banner"
+            />
+          )}
+        </div>
 
         <p>{blog.content}</p>
 
-        <h2>Key Points</h2>
-        <ul>
-          {blog.points.map((point, index) => (
-            <li key={index}>{point}</li>
-          ))}
-        </ul>
+        {blog.points?.length > 0 && (
+          <>
+            <h2>Key Points</h2>
+            <ul>
+              {blog.points.map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
+            </ul>
+          </>
+        )}
 
         <div className="blog-cta">
           <h3>Join Our Green Mission 🌱</h3>
           <p>Be a part of our environmental protection movement.</p>
-          <button>Become a Volunteer</button>
+
+          
+          <button onClick={() => navigate("/volunteer-form")}>
+            Become a Volunteer
+          </button>
         </div>
       </div>
     </section>
   );
 };
 
-export default BlogDetails;
+export default memo(BlogDetails);

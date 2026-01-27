@@ -19,6 +19,7 @@
   position: relative;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 1;
@@ -33,6 +34,10 @@
   font-family: var(--font-heading);
 }
 
+.gallery-hero-content p{
+  color:#ffffff;
+  margin-top: 10px;
+}
 /* Breadcrumb Bar */
 .gallery-breadcrumb-bar {
   position: absolute;

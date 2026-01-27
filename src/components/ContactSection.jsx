@@ -6,13 +6,9 @@ const ContactSection = () => {
     <section className="contact-section">
       <div className="container">
         <div className="contact-header">
-          <h2>Contact Us</h2>
-          <span className="contact-underline"></span>
-          <p>
-            Better yet, see us in person! Visit our centers or reach out to us 
-            to learn more about how you can support education and empowerment 
-            in Madurai communities.
-          </p>
+          {/* <h2>Contact Us</h2> */}
+          {/* <span className="contact-underline"></span> */}
+          
         </div>
 
         <form className="contact-form">

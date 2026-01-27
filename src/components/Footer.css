@@ -237,3 +237,105 @@
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.9rem;
 }
+
+/* =========================
+   RESPONSIVE FOOTER
+========================= */
+
+/* Tablet (≤ 992px) */
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .footer-text {
+    max-width: 100%;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 40px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .footer-col {
+    align-items: flex-start;
+  }
+
+  .footer-title {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .footer-text,
+  .footer-contact,
+  .footer-links {
+    font-size: 13px;
+  }
+
+  .footer-form input,
+  .footer-form textarea {
+    font-size: 13px;
+  }
+
+  .footer-form button {
+    padding: 10px 24px;
+    font-size: 13px;
+  }
+
+  .footer-bottom {
+    padding: 18px 0;
+  }
+
+  .footer-bottom p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+}
+
+/* Small Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .footer-logo h3 {
+    font-size: 20px;
+  }
+
+  .footer-logo small {
+    font-size: 11px;
+  }
+
+  .footer-text {
+    font-size: 12.5px;
+    line-height: 1.5;
+  }
+
+  .footer-contact li {
+    font-size: 12.5px;
+  }
+
+  .footer-socials span {
+    width: 30px;
+    height: 30px;
+    font-size: 11px;
+  }
+}

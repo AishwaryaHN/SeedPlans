@@ -35,15 +35,7 @@
     padding-bottom: 12px;
     position: relative;
 }
-/* .section-title:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 60px;
-    height: 3px;
-    background-color: #ff5a00;
-} */
+
 
 /* News card */
 .news-card {
@@ -189,3 +181,61 @@
 .event-content p:last-child {
     margin-bottom: 0;
 }
+
+
+/* ===== MOBILE: 1 COLUMN, 2 ROWS + SLIDABLE CARDS ===== */
+@media (max-width: 768px) {
+
+  /* Force single column layout */
+  .news-events-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 60px;
+  }
+
+  /* Row separation */
+  .news-section,
+  .events-section {
+    width: 100%;
+  }
+
+  /* ---------- NEWS SLIDER ---------- */
+  .news-section {
+    overflow-x: auto;
+  }
+
+  .news-card {
+    min-width: 85%;
+    margin-right: 16px;
+  }
+
+  /* ---------- EVENTS SLIDER ---------- */
+  .events-section {
+    overflow-x: auto;
+  }
+
+  .event-card {
+    min-width: 90%;
+    margin-right: 16px;
+    flex-shrink: 0;
+  }
+
+  /* Smooth horizontal scroll */
+  .news-section,
+  .events-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news-section > .news-card,
+  .events-section > .event-card {
+    scroll-snap-align: start;
+  }
+
+  /* Hide ugly scrollbar (mobile safe) */
+  .news-section::-webkit-scrollbar,
+  .events-section::-webkit-scrollbar {
+    display: none;
+  }
+}
+

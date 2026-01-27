@@ -8,7 +8,8 @@ const BlogHero = () => {
       <div className="blog-hero-overlay"></div>
 
       <div className="blog-hero-content">
-        <h1>Blog</h1>
+        <h1>Our Blog</h1>
+        <p >Latest news & environmental insights</p>
       </div>
 
       <div className="blog-breadcrumb-bar">

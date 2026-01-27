@@ -1,0 +1,53 @@
+.volunteer-form {
+  padding: 100px 0;
+  background: #f8f9f8;
+  text-align: center;
+}
+
+.volunteer-form h2 {
+  font-size: 32px;
+  color: #ff5a00;
+  margin-bottom: 10px;
+}
+
+.volunteer-form p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.form-box {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 12px;
+  background: #ff5a00;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background: #ffffff;
+  color: #ff5a00;
+  border: 1px solid  #ff5a00;
+}

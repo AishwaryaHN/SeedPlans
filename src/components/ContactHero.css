@@ -32,6 +32,11 @@
   margin: 0;
 }
 
+.hero-content p{
+  color: #ffffff;
+  margin-top: 10px;
+}
+
 /* Breadcrumb Bar */
 .breadcrumb-bar {
   position: absolute;

@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 import ScrollToTop from './components/ScrollToTop';
+import VolunteerForm from "./pages/VolunteerForm";
 import './App.css';
 import './styles/fonts.css';
 
@@ -45,6 +46,8 @@ function App() {
         <Route path="/blog" element={<BlogPage/>}/>
         <Route path="/contact" element={<ContactPage/>}/>
         <Route path="/blog/:id" element={<BlogDetails />} />
+        <Route path="/volunteer-form" element={<VolunteerForm />} />
+
       </Routes>
 
       <Footer />
