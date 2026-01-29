@@ -43,7 +43,7 @@ const About = () => {
           <div className="about-image">
             <div className="image-wrapper">
               <img 
-                src="https://img1.wsimg.com/isteam/ip/5276e802-4936-4f26-90d6-9f9037fd5ed4/SeedStudents2.jpg/:/rs=w:1170,h:800" 
+                src="./images/AllGrp.png" 
                 alt="Seed Plan students learning together"
                 className="about-img"
               />

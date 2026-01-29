@@ -15,7 +15,7 @@ const NewsEvents = () => {
           <div className="news-card">
             <div className="news-image">
               <img
-                src="https://img1.wsimg.com/isteam/ip/5276e802-4936-4f26-90d6-9f9037fd5ed4/SeedStudentsDancing.jpg/:/rs=w:600,h:400"
+                src="./images/oldman.png"
                 alt="Seed Plan students commemorating Prof. Ted Adams"
               />
             </div>

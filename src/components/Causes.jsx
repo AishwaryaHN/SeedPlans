@@ -11,8 +11,7 @@ const Causes = () => {
       description:
         "We run after school study centers in Karumbalai, Thathaneri, Alwarpuram, Mathiyiam, Kalmedu and Sambakudi. The centers are open from 6 to 9pm in the evenings, and on weekends.",
       image:
-        "https://img1.wsimg.com/isteam/ip/5276e802-4936-4f26-90d6-9f9037fd5ed4/SeedStudentsDancing.jpg/:/rs=w:1170,h:800"
-    }
+        "./images/dance.png"}
   ];
 
   const programs = [

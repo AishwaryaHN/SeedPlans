@@ -23,7 +23,7 @@ const Hero = () => {
       description: "Join our mission to build brighter futures for underprivileged children",
       stats: "15 Study Centers",
       icon: <BookOpen size={20} />,
-      background: 'https://img1.wsimg.com/isteam/ip/5276e802-4936-4f26-90d6-9f9037fd5ed4/SeedStudents2.jpg/:/rs=w:1300,h:800'
+      background: './images/AllGrp.png'
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ const Hero = () => {
       description: "Providing holistic education and development opportunities across Madurai",
       stats: "100+ Volunteers",
       icon: <Heart size={20} />,
-      background: 'https://img1.wsimg.com/isteam/ip/5276e802-4936-4f26-90d6-9f9037fd5ed4/SeedVolunteers.png/:/rs=w:1300,h:800'
+      background: './images/grp.png'
     }
   ];
 

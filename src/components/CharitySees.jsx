@@ -8,7 +8,7 @@ const CharitySees = () => {
       <div 
         className="charity-background"
         style={{
-          backgroundImage: 'url(https://img1.wsimg.com/isteam/ip/5276e802-4936-4f26-90d6-9f9037fd5ed4/SeedVolunteers.png)'
+          backgroundImage: 'url(./images/grp.png)'
         }}
       >
         <div className="background-overlay"></div>
